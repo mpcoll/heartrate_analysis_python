@@ -172,7 +172,7 @@ def segment_plotter(working_data, measures, title='Heart Rate Signal Peak Detect
         wd_segment['removed_beats_y'] = working_data['removed_beats_y'][i]
         wd_segment['hr'] = working_data['hr'][i]
         wd_segment['rolling_mean'] = working_data['rolling_mean'][i]
-        m_segment['bpm'] = measures['bpm'][i]
+        m_segment['bpm'] = measures['bpm']
         try:
             wd_segment['rejected_segments'] = working_data['rejected_segments'][i]
         except:
